@@ -579,5 +579,33 @@
     display: block;
   }
 
+  /* Faq Section */
+  .faq-section{
+    padding: 80px 0 40px;
+  }
+  .faq-section .faq-item{
+    margin-bottom: 40px;
+  }
+  .faq-section .faq-item h4{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #222222;
+    margin: 0 0 10px;
+  }
+  .faq-section .faq-item p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    font-weight: 400;
+    margin: 0;
+  }
+  .faq-section .support-text{
+    margin: 15px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 26px;
+  }
 
 
