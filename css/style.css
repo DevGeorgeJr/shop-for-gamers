@@ -41,8 +41,8 @@
     margin-top: -4px;
   }
 
-  .mybtn1{
-    background-color: #ffffff;
+  .mybtn1,
+  .mybtn2{
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -54,10 +54,21 @@
     overflow: hidden;
     z-index: 1;
   }
+  .mybtn1{
+    background-color: #ffffff;
+  }
+  .mybtn2{
+    color: #ffffff;
+  }
+  .mybtn2:hover{
+    color: #ffffff;
+  }
+  .mybtn2:focus,
   .mybtn1:focus{
     box-shadow: none;
   }
-  .mybtn1:before{
+  .mybtn2::before,
+  .mybtn1::before{
     content: '';
     position: absolute;
     left: 0;
@@ -68,6 +79,7 @@
     z-index: -1;
     transition: all 0.3s ease;
   }
+  .mybtn2:hover::before,
   .mybtn1:hover::before{
     width: 100%;
   }
@@ -606,6 +618,58 @@
     font-weight: 600;
     color: #222222;
     line-height: 26px;
+  }
+
+  /* Newsletter Section */
+  .newsletter-section{
+    background-image: url('../img/bg-02.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    padding: 80px 0 80px;
+    position: relative;
+    z-index: 1;
+  }
+  .newsletter-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+  }
+  .newsletter-section .section-title .title,
+  .newsletter-section .section-title .subtitle{
+    color: #ffffff;
+  }
+  .newsletter-section .section-title .title::before{
+    background-color: #ffffff;
+  }
+  .newsletter-section .newsletter-form .form-group{
+    margin-bottom: 0;
+  }
+  .newsletter-section .newsletter-form .form-control{
+    height: 60px;
+    border-radius: 60px;
+    padding: 0 185px 0 30px;
+    outline: none;
+    border: none;
+    color: #555555;
+    font-weight: 400;
+  }
+  .newsletter-section .newsletter-form .form-control:focus{
+    box-shadow: none;
+  }
+  .newsletter-section .newsletter-form{
+    position: relative;
+  }
+
+  .newsletter-section .newsletter-form .btn{
+    height: 48px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
   }
 
 
