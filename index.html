@@ -16,8 +16,26 @@
   <!-- Default skin -->
   <link rel="stylesheet" href="css/skins/crimson.css">
 
+  <!-- Live Style Switcher - demo only -->
+  <link rel="stylesheet" title="crimson" class="alternate-style" href="css/skins/crimson.css" disabled>
+  <link rel="stylesheet" title="blue" class="alternate-style" href="css/skins/blue.css" disabled>
+  <link rel="stylesheet" title="indigo" class="alternate-style" href="css/skins/indigo.css" disabled>
+  <link rel="stylesheet" title="aqua" class="alternate-style" href="css/skins/aqua.css" disabled>
+  <link rel="stylesheet" title="black" class="alternate-style" href="css/skins/black.css" disabled>
+  <link rel="stylesheet" href="css/styleSwitcher.css">
+
+
+
 </head>
 <body>
+
+  <!-- Preloader Start -->
+  <div class="preloader">
+    <div class="loader">
+      
+    </div>
+  </div>
+  <!-- Preloader End -->
 
 <!-- Header Section Start -->
 <header class="header fixed-top">
@@ -642,6 +660,33 @@
 </footer>
 <!-- Footer Section End -->
 
+<!-- Live Style Switcher - demo only Start-->
+<div class="style-switcher">
+  <div class="toogle-style-switcher">
+    <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <h5>Style Switcher</h5>
+  <ul class="list-unstyled">
+    <li title="crimson" 
+        style="background-color: #d70d25;"
+        onclick="setActiveStyle('crimson')"></li>
+    <li title="blue" 
+        style="background-color: #4948d4;"
+        onclick="setActiveStyle('blue')"></li>
+    <li title="indigo" 
+        style="background-color: #6400ae;"
+        onclick="setActiveStyle('indigo')"></li>
+    <li title="aqua" 
+        style="background-color: #05b3b6;"
+        onclick="setActiveStyle('aqua')"></li>
+    <li title="black" 
+        style="background-color: #222222;"
+        onclick="setActiveStyle('black')"></li>
+  </ul>
+</div>
+<!-- Live Style Switcher - demo only End-->
+
+
 <!-- Jquery -->
 <script src="js/jquery.min.js"></script>
 <!-- Popper -->
@@ -652,5 +697,9 @@
  <script src="js/owl.carousel.min.js"></script>
 <!-- main -->
 <script src="js/main.js"></script>
+
+<!-- Live Style Switcher - demo only -->
+<script src="js/styleSwitcher.js"></script>
+
 </body>
 </html>
