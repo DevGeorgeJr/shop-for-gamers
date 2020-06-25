@@ -125,6 +125,34 @@
     background-color: #f5f5ff;
   }
 
+  /* Preloader */
+  .preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222222;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .preloader .loader{
+    height: 50px;
+    width: 50px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: preloader 1s linear infinite;
+  }
+  @keyframes preloader{
+    0%{
+      transform: rotate(0deg);
+    }
+    0%{
+      transform: rotate(360deg);
+    }
+  }
 
   /* Header Section */
   .header{
@@ -480,7 +508,7 @@
   /* Testimonial Section */
   .testimonial-section{
     padding: 80px 0 80px;
-    background-image: url('../img/bg-01.jpg');
+    background-image: url('../img/bg-01.png');
     background-position: center;
     background-attachment: fixed;
     position: relative;
@@ -625,7 +653,7 @@
 
   /* Newsletter Section */
   .newsletter-section{
-    background-image: url('../img/bg-02.jpg');
+    background-image: url('../img/bg-02.png');
     background-attachment: fixed;
     background-position: center;
     padding: 80px 0 80px;
